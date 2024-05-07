@@ -1,3 +1,3 @@
 # JS-mini-projects
 
-## this repo contains the mini projects using html,css, js
+## this repo contains the mini projects made by using html,css, js
