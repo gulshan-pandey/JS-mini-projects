@@ -15,5 +15,5 @@ var flag = 0;
         }
       
        
-        clickSound.play();
+       
     });
