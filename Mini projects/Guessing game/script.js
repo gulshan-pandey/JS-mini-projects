@@ -66,7 +66,7 @@ function displayMessage(message){
 
 
 function endGame(){
-    submit.remove()
+
     userInput.value=" "
     userInput.disabled = true
     p.classList.add('button')
