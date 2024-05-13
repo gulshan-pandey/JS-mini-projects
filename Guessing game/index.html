@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guessing Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <nav>
-        <a href="#" aria-current="page">Home</a>
-        <a target="_blank" href="https://github.com/gulshan-pandey">GitHub </a>
-    </nav>
 
-    <div id="wrapper">
-        <h1>Number guessing game</h1>
-        <p style="color: rgb(250, 0, 0); font-weight: 500;">Guess a random number between 1 and 100.</p>
+<body>
+    <section>
+        <nav>
+            <a href="#" aria-current="page">Home</a>
+            <a target="_blank" href="https://github.com/gulshan-pandey">GitHub </a>
+        </nav>
+
+        <div id="wrapper">
+            <h1>Number guessing game</h1>
+        <h5 style="color: rgb(250, 0, 0); font-weight: 500;">Guess a random number between 1 and 100.</h5>
+        
+        <p>You have 10 attempts to guess the right number.</p>
         <form class="form">
-            <label for ="guessField">Enter a guess</label>
+            <label for="guessField">Enter a guess</label>
             <input type="text" id="guessField" class="guessField">
             <input type="submit" id="subt" value="Submit guess">
         </form>
@@ -27,6 +32,8 @@
             <p class="lowOrHi"></p>
         </div>
     </div>
-    <script src="script.js"></script>
+</section>
+<script src="script.js"></script>
 </body>
+
 </html>
