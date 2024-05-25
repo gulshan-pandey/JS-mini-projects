@@ -16,7 +16,7 @@ function getTime(){
     hoursHand.style.transform = "rotate("+(hours*30+minutes/2)+"deg)";
 }
 
-getTime()
+// getTime()
 
 setInterval(getTime,100)
 
