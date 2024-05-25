@@ -12,7 +12,7 @@ function getTime(){
     let timeInterval =6
     // console.log(seconds,minutes,hours)
     secondsHand.style.transform= "rotate(+"+(seconds*timeInterval) +"deg)";
-    minutesHand.style.transform= "rotate(+"+(minutes*timeInterval) +"deg)";
+    minutesHand.style.transform= "rotate(+"+(minutes*timeInterval + seconds/10) +"deg)";          // seconds/10 is to make smoothness
     hoursHand.style.transform = "rotate("+(hours*30+minutes/2)+"deg)";
 }
 
