@@ -6,40 +6,54 @@
 body{
 
     height:100vh;
-    display:flex;
+    display:flex;           /* thanks to display flex */
     justify-content:center;
     align-items: center;
-    background-color: #3c3b3b;
+    background-color: #090808;
 }
 
 .clock{
     height: 300px;
     width :300px;
     border-radius: 50%;
-    border: 5px solid rgb(0, 255, 251);
+    border: 5px solid rgb(27, 32, 32);
     position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5),
+              0 0 20px rgba(255, 237, 237, 0.5),
+              0 0 30px rgba(0, 0, 0, 0.5),
+              0 0 40px rgba(0, 0, 0, 0.5);
+
 
 }
 
 #second-hand{
-    height:130px;
+    height:120px;
     width:2px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    border-radius:  1px;
-    left:149px;
-    bottom:149px;
-    opacity: 60%;
-    transform-origin:0 100%;
+    border-radius:  2px;
+    left:153px;
+    bottom:151px;
+    opacity: 80%;
+    transform-origin:0 100%;            /*  rotate obj about top right axis*/
 }
 
+#second-hand::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #fff;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+  }
 #minute-hand{
     height:100px;
-    width: 2px;
-    background-color: rgb(38, 0, 255);
+    width: 5px;
+    background-color: rgb(255, 255, 255);
     position: absolute;
-    border-radius:  1px;
-    bottom: 149px;
+    border-radius:  4px;
+    bottom: 158px;
     left:149px;
     transform-origin:0 100%;
 }
@@ -47,20 +61,20 @@ body{
 
 #hours-hand{
     height: 80px;
-    width: 4px;
-    background-color:rgb(230, 0, 255);
+    width: 7px;
+    background-color:rgb(255, 0, 0);
     position:absolute;
     border-radius:  3px;
-    bottom: 148px;
-    left: 148px;
+    bottom: 147px;
+    left: 152px;
     transform-origin:0 100%;
 }
 
 #center{
-    height: 10px;
-    width: 10px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
-    background-color: cadetblue;
+    background-color: rgb(255, 255, 255);
     position: absolute;
     left:145px;
     bottom:145px;
